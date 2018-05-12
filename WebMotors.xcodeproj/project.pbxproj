@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10F8F1690BCB3DC8A2CA53F8 /* Pods_WebMotors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B65E547AC06544941B72C2A /* Pods_WebMotors.framework */; };
 		2FDD028120A773DF0094CE33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD028020A773DF0094CE33 /* AppDelegate.swift */; };
 		2FDD028320A773DF0094CE33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD028220A773DF0094CE33 /* ViewController.swift */; };
 		2FDD028620A773DF0094CE33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDD028420A773DF0094CE33 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D401F57C84697E36F04D253 /* Pods-WebMotors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMotors.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebMotors/Pods-WebMotors.release.xcconfig"; sourceTree = "<group>"; };
+		1D77288899E6E0645D5CC08F /* Pods-WebMotors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMotors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebMotors/Pods-WebMotors.debug.xcconfig"; sourceTree = "<group>"; };
 		2FDD027D20A773DF0094CE33 /* WebMotors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebMotors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDD028020A773DF0094CE33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FDD028220A773DF0094CE33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		2FDD029C20A773E10094CE33 /* WebMotorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebMotorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDD02A020A773E10094CE33 /* WebMotorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMotorsUITests.swift; sourceTree = "<group>"; };
 		2FDD02A220A773E10094CE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B65E547AC06544941B72C2A /* Pods_WebMotors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebMotors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F8F1690BCB3DC8A2CA53F8 /* Pods_WebMotors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				2FDD029420A773E10094CE33 /* WebMotorsTests */,
 				2FDD029F20A773E10094CE33 /* WebMotorsUITests */,
 				2FDD027E20A773DF0094CE33 /* Products */,
+				DD11AC253ABF2F155D13B78B /* Pods */,
+				7F6739FC344CC65F3DEBBAF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = WebMotorsUITests;
 			sourceTree = "<group>";
 		};
+		7F6739FC344CC65F3DEBBAF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B65E547AC06544941B72C2A /* Pods_WebMotors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD11AC253ABF2F155D13B78B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D77288899E6E0645D5CC08F /* Pods-WebMotors.debug.xcconfig */,
+				0D401F57C84697E36F04D253 /* Pods-WebMotors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FDD02A520A773E10094CE33 /* Build configuration list for PBXNativeTarget "WebMotors" */;
 			buildPhases = (
+				96F0984F3B75D6FAE5A0BE51 /* [CP] Check Pods Manifest.lock */,
 				2FDD027920A773DF0094CE33 /* Sources */,
 				2FDD027A20A773DF0094CE33 /* Frameworks */,
 				2FDD027B20A773DF0094CE33 /* Resources */,
+				A6D0624C4B6B0F0AF65D3806 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96F0984F3B75D6FAE5A0BE51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebMotors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D0624C4B6B0F0AF65D3806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebMotors/Pods-WebMotors-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebMotors/Pods-WebMotors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FDD027920A773DF0094CE33 /* Sources */ = {
@@ -428,15 +495,13 @@
 		};
 		2FDD02A620A773E10094CE33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D77288899E6E0645D5CC08F /* Pods-WebMotors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S27M9ZF22P;
 				INFOPLIST_FILE = WebMotors/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,15 +511,13 @@
 		};
 		2FDD02A720A773E10094CE33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D401F57C84697E36F04D253 /* Pods-WebMotors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S27M9ZF22P;
 				INFOPLIST_FILE = WebMotors/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -469,11 +532,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,11 +548,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -508,11 +563,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -527,11 +578,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
