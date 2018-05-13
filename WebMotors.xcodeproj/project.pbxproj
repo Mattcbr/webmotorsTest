@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		10F8F1690BCB3DC8A2CA53F8 /* Pods_WebMotors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B65E547AC06544941B72C2A /* Pods_WebMotors.framework */; };
+		2F3D10C320A77C6D00DEB78E /* carsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D10C220A77C6D00DEB78E /* carsCollectionViewController.swift */; };
+		2F3D10C520A77C7D00DEB78E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D10C420A77C7D00DEB78E /* Car.swift */; };
+		2F3D10C720A77C9200DEB78E /* request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D10C620A77C9200DEB78E /* request.swift */; };
+		2F3D10C920A77C9C00DEB78E /* parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D10C820A77C9C00DEB78E /* parser.swift */; };
+		2F3D10CC20A77D9600DEB78E /* carCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D10CB20A77D9600DEB78E /* carCollectionViewCell.swift */; };
 		2FDD028120A773DF0094CE33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD028020A773DF0094CE33 /* AppDelegate.swift */; };
-		2FDD028320A773DF0094CE33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD028220A773DF0094CE33 /* ViewController.swift */; };
+		2FDD028320A773DF0094CE33 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD028220A773DF0094CE33 /* detailsViewController.swift */; };
 		2FDD028620A773DF0094CE33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDD028420A773DF0094CE33 /* Main.storyboard */; };
 		2FDD028820A773E10094CE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDD028720A773E10094CE33 /* Assets.xcassets */; };
 		2FDD028B20A773E10094CE33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDD028920A773E10094CE33 /* LaunchScreen.storyboard */; };
 		2FDD029620A773E10094CE33 /* WebMotorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD029520A773E10094CE33 /* WebMotorsTests.swift */; };
 		2FDD02A120A773E10094CE33 /* WebMotorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD02A020A773E10094CE33 /* WebMotorsUITests.swift */; };
+		2FE3C49E20A7D31C0019F59A /* loadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3C49C20A7D31C0019F59A /* loadingCollectionViewCell.swift */; };
+		2FE3C49F20A7D31C0019F59A /* loadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE3C49D20A7D31C0019F59A /* loadingCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +44,14 @@
 /* Begin PBXFileReference section */
 		0D401F57C84697E36F04D253 /* Pods-WebMotors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMotors.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebMotors/Pods-WebMotors.release.xcconfig"; sourceTree = "<group>"; };
 		1D77288899E6E0645D5CC08F /* Pods-WebMotors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMotors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebMotors/Pods-WebMotors.debug.xcconfig"; sourceTree = "<group>"; };
+		2F3D10C220A77C6D00DEB78E /* carsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carsCollectionViewController.swift; sourceTree = "<group>"; };
+		2F3D10C420A77C7D00DEB78E /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		2F3D10C620A77C9200DEB78E /* request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = request.swift; sourceTree = "<group>"; };
+		2F3D10C820A77C9C00DEB78E /* parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parser.swift; sourceTree = "<group>"; };
+		2F3D10CB20A77D9600DEB78E /* carCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FDD027D20A773DF0094CE33 /* WebMotors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebMotors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDD028020A773DF0094CE33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FDD028220A773DF0094CE33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FDD028220A773DF0094CE33 /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 		2FDD028520A773DF0094CE33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FDD028720A773E10094CE33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FDD028A20A773E10094CE33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +62,8 @@
 		2FDD029C20A773E10094CE33 /* WebMotorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebMotorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDD02A020A773E10094CE33 /* WebMotorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMotorsUITests.swift; sourceTree = "<group>"; };
 		2FDD02A220A773E10094CE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE3C49C20A7D31C0019F59A /* loadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		2FE3C49D20A7D31C0019F59A /* loadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadingCollectionViewCell.xib; sourceTree = "<group>"; };
 		6B65E547AC06544941B72C2A /* Pods_WebMotors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebMotors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +93,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3D10BE20A77BFB00DEB78E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F3D10C220A77C6D00DEB78E /* carsCollectionViewController.swift */,
+				2FDD028220A773DF0094CE33 /* detailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F3D10BF20A77C1700DEB78E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2F3D10C420A77C7D00DEB78E /* Car.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		2F3D10C020A77C2200DEB78E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2FDD028420A773DF0094CE33 /* Main.storyboard */,
+				2FDD028920A773E10094CE33 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2F3D10C120A77C2E00DEB78E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2F3D10C620A77C9200DEB78E /* request.swift */,
+				2F3D10C820A77C9C00DEB78E /* parser.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2F3D10CA20A77D8000DEB78E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2F3D10CB20A77D9600DEB78E /* carCollectionViewCell.swift */,
+				2FE3C49C20A7D31C0019F59A /* loadingCollectionViewCell.swift */,
+				2FE3C49D20A7D31C0019F59A /* loadingCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		2FDD027420A773DF0094CE33 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +163,13 @@
 		2FDD027F20A773DF0094CE33 /* WebMotors */ = {
 			isa = PBXGroup;
 			children = (
+				2F3D10CA20A77D8000DEB78E /* Cells */,
+				2F3D10C120A77C2E00DEB78E /* Core */,
+				2F3D10C020A77C2200DEB78E /* Storyboards */,
+				2F3D10BF20A77C1700DEB78E /* Objects */,
+				2F3D10BE20A77BFB00DEB78E /* ViewControllers */,
 				2FDD028020A773DF0094CE33 /* AppDelegate.swift */,
-				2FDD028220A773DF0094CE33 /* ViewController.swift */,
-				2FDD028420A773DF0094CE33 /* Main.storyboard */,
 				2FDD028720A773E10094CE33 /* Assets.xcassets */,
-				2FDD028920A773E10094CE33 /* LaunchScreen.storyboard */,
 				2FDD028C20A773E10094CE33 /* Info.plist */,
 			);
 			path = WebMotors;
@@ -258,6 +319,7 @@
 				2FDD028B20A773E10094CE33 /* LaunchScreen.storyboard in Resources */,
 				2FDD028820A773E10094CE33 /* Assets.xcassets in Resources */,
 				2FDD028620A773DF0094CE33 /* Main.storyboard in Resources */,
+				2FE3C49F20A7D31C0019F59A /* loadingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,8 +385,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FDD028320A773DF0094CE33 /* ViewController.swift in Sources */,
+				2F3D10C920A77C9C00DEB78E /* parser.swift in Sources */,
+				2F3D10CC20A77D9600DEB78E /* carCollectionViewCell.swift in Sources */,
+				2FDD028320A773DF0094CE33 /* detailsViewController.swift in Sources */,
 				2FDD028120A773DF0094CE33 /* AppDelegate.swift in Sources */,
+				2F3D10C520A77C7D00DEB78E /* Car.swift in Sources */,
+				2F3D10C720A77C9200DEB78E /* request.swift in Sources */,
+				2F3D10C320A77C6D00DEB78E /* carsCollectionViewController.swift in Sources */,
+				2FE3C49E20A7D31C0019F59A /* loadingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +569,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S27M9ZF22P;
 				INFOPLIST_FILE = WebMotors/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -517,7 +588,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S27M9ZF22P;
 				INFOPLIST_FILE = WebMotors/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -532,7 +606,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -548,7 +626,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -563,7 +645,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -578,7 +664,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebMotorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattcbr.WebMotorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
