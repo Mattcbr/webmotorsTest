@@ -16,6 +16,7 @@ class carsCollectionViewController: UICollectionViewController, RequestDelegate 
 
     // MARK: Creating the Outlets and Variables neccessary
     @IBOutlet weak var loadingCarsActivityIndicator: UIActivityIndicatorView!
+    
     var r = Request()
     var pageNumber = 1
     var isLoadingData = false
