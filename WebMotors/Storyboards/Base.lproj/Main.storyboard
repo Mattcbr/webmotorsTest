@@ -327,4 +327,5 @@
         <image name="paint" width="200" height="200"/>
         <image name="year" width="862" height="980"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

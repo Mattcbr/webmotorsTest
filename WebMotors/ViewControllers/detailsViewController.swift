@@ -12,6 +12,7 @@ import UIKit
 
 class detailsViewController: UIViewController {
     
+    // MARK: Creating the Outlets and Variables neccessary
     @IBOutlet weak var carPictureImageView: UIImageView!
     @IBOutlet weak var carPriceLabel: UILabel!
     @IBOutlet weak var carMakerLabel: UILabel!
@@ -35,15 +36,18 @@ class detailsViewController: UIViewController {
             self.view.reloadInputViews()
         }
     }
-//    var carImage = UIImage()
     
+    // MARK: Default Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Setting the navigation title
         self.navigationItem.title = "\(selectedCar!.make) \(selectedCar!.model)"
         
+        //Setting the car picture
         carPictureImageView.image = selectedCar!.image
         
+        //Call the functions to set the labels text and configure and display the labels
         setLabelsText()
         configureAndDisplayLabels()
         
@@ -51,9 +55,11 @@ class detailsViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    // MARK: Labels Functions
+    
+    //This functions sets the labels texts
     func setLabelsText(){
         carMakerText
             .bold("Montadora")
@@ -84,6 +90,7 @@ class detailsViewController: UIViewController {
             .normal("\n\(selectedCar!.yearModel)")
     }
     
+    //This functions configures and displays each of the labels
     func configureAndDisplayLabels() {
         carPriceLabel.numberOfLines = 0
         carPriceLabel.text = "R$ \(selectedCar!.price)"
@@ -119,6 +126,10 @@ class detailsViewController: UIViewController {
     }
 
 }
+
+// MARK: Text bold extension
+
+//This function is used to create attributed texts with bold and regular words together inside it
 extension NSMutableAttributedString {
     @discardableResult func bold(_ text: String) -> NSMutableAttributedString {
         let attrs: [NSAttributedStringKey: Any] = [.font: UIFont.boldSystemFont(ofSize: 18)]
