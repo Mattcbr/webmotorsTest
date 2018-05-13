@@ -127,7 +127,6 @@ class carsCollectionViewController: UICollectionViewController, RequestDelegate 
         }
     }
     
-    
      // MARK: - Navigation
     
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -151,10 +150,11 @@ class carsCollectionViewController: UICollectionViewController, RequestDelegate 
     
     //Handles the request and parse success
     func didLoadCars(Cars: [Car]) {
+        //If is the first time making a request, set the Cars Array as the array received
         if(firstRequest){
             carsArray = Cars
             firstRequest = false
-        } else {
+        } else {    //If is not the first request, append the new cars to the existing array
             Cars.forEach{newCar in
                 carsArray?.append(newCar)
             }
@@ -163,7 +163,19 @@ class carsCollectionViewController: UICollectionViewController, RequestDelegate 
     
     //Handles the request error
     func didFailToLoadCars(withError error: Error) {
-        print("Error: \(error.localizedDescription)")
+        showRequestErrorAlert()
     }
 
+    // MARK: Alert Handling
+    
+    //In case the something has gone wrong in the request, display an alert to the user.
+    @IBAction func showRequestErrorAlert(){
+        let alert = UIAlertController(title: "Erro", message: "Um erro inesperado ocorreu. Caso volte à ocorrer, favor entrar em contato conosco.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Fechar", comment: "Default action"), style: .default, handler: { _ in
+            print("Error close pressed")
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
