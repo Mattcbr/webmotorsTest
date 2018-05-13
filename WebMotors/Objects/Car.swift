@@ -11,6 +11,7 @@ import UIKit
 
 struct Car {
     
+    //Sets the car properties
     let color : String
     let imageLink : String
     let km : Int
@@ -23,6 +24,7 @@ struct Car {
     var image: UIImage
     var hasLoadedImage: Bool
     
+    //Initiates the car properties
     init(color: String, imageLink: String, km: Int, make: String, model: String, price: String, version: String, yearFab: Int, yearModel: Int) {
         self.color = color
         self.imageLink = imageLink

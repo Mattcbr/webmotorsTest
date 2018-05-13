@@ -10,15 +10,15 @@ import Foundation
 
 class Parser {
     
+    //This function parses the information from the received JSON
     func parseInfo(response: Any) -> [Car]{
         let JSONresponse = response as? [[String : Any]]
-//        print(JSONresponse!)
         
         var carsArray = [Car]()
         
         JSONresponse?.forEach { vehicle in
             
-            //Colects information of each show
+            //Colects information of each car
             let color = vehicle["Color"] as? String
             let imageLink = vehicle["Image"] as? String
             let km = vehicle["KM"] as? Int
@@ -40,6 +40,7 @@ class Parser {
                              yearFab: yearFab!,
                              yearModel: yearModel!)
             
+            //Save the new car in an array of Cars
             carsArray.append(newCar)
         }
         return carsArray

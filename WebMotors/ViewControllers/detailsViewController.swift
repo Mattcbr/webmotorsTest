@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Alamofire
-import AlamofireImage
+//import Alamofire
+//import AlamofireImage
 
 class detailsViewController: UIViewController {
     
@@ -22,24 +22,39 @@ class detailsViewController: UIViewController {
     @IBOutlet weak var carFabYearLabel: UILabel!
     @IBOutlet weak var carModelYearLabel: UILabel!
     
+    let carMakerText = NSMutableAttributedString()
+    let carModelText = NSMutableAttributedString()
+    let carVersionText = NSMutableAttributedString()
+    let carKmText = NSMutableAttributedString()
+    let carColorText = NSMutableAttributedString()
+    let carYearFabText = NSMutableAttributedString()
+    let carYearModelText = NSMutableAttributedString()
+    
     var selectedCar: Car? {
         didSet {
             self.view.reloadInputViews()
         }
     }
-    var carImage = UIImage()
+//    var carImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let carMakerText = NSMutableAttributedString()
-        let carModelText = NSMutableAttributedString()
-        let carVersionText = NSMutableAttributedString()
-        let carKmText = NSMutableAttributedString()
-        let carColorText = NSMutableAttributedString()
-        let carYearFabText = NSMutableAttributedString()
-        let carYearModelText = NSMutableAttributedString()
+        self.navigationItem.title = "\(selectedCar!.make) \(selectedCar!.model)"
         
+        carPictureImageView.image = selectedCar!.image
+        
+        setLabelsText()
+        configureAndDisplayLabels()
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func setLabelsText(){
         carMakerText
             .bold("Montadora")
             .normal("\n\(selectedCar!.make)")
@@ -67,12 +82,9 @@ class detailsViewController: UIViewController {
         carYearModelText
             .bold("Ano do Modelo")
             .normal("\n\(selectedCar!.yearModel)")
-        
-        
-        self.navigationItem.title = "\(selectedCar!.make) \(selectedCar!.model)"
-        
-        carPictureImageView.image = carImage
-        
+    }
+    
+    func configureAndDisplayLabels() {
         carPriceLabel.numberOfLines = 0
         carPriceLabel.text = "R$ \(selectedCar!.price)"
         carPriceLabel.sizeToFit()
@@ -105,12 +117,6 @@ class detailsViewController: UIViewController {
         carModelYearLabel.attributedText = carYearModelText
         carModelYearLabel.sizeToFit()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 extension NSMutableAttributedString {

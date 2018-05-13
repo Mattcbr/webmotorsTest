@@ -10,6 +10,7 @@ import UIKit
 
 class carCollectionViewCell: UICollectionViewCell {
     
+    // Creating the Cell Properties
     @IBOutlet weak var carPriceLabel: UILabel!
     @IBOutlet weak var carNameLabel: UILabel!
     @IBOutlet weak var carYearLabel: UILabel!
@@ -17,5 +18,5 @@ class carCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var carColorLabel: UILabel!
     @IBOutlet weak var carPictureImageView: UIImageView!
     @IBOutlet weak var imageLoadingActivityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var carsCountLabel: UILabel!
+
 }
